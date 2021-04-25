@@ -16,7 +16,6 @@ public abstract class DB {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url="jdbc:mysql://localhost:3306/UI_UX?zeroDateTimeBehavior=CONVERT_TO_NULL";
              con=DriverManager.getConnection(url, "root", "");  
-                //here sonoo is database name, root is username and password  
              stmt=con.createStatement();  
              
              System.out.println("Connect Successfull!");
